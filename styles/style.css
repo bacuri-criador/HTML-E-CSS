@@ -4,10 +4,10 @@
 
  /* variáveis, para centralizar as cores, e otimizar o código, quando quiser mudar cores e fontes principais  */
 :root { 
-    --cor-principal: #000000;
-    --cor-secundaria: #f6f6f6;
-    --cor-terciaria: #22d4fd;
-    --cor-hover: #272727; /* :hover  é uma animação visual que destaca um botão quando o cursor do mouse passa por cima dele */
+    --cor-principal: #1B262C;
+    --cor-secundaria: #d0e5f3;
+    --cor-terciaria: #00ADB5;
+    --cor-hover: #073c3f; /* :hover  é uma animação visual que destaca um botão quando o cursor do mouse passa por cima dele */
 
     --fonte-principal: "Krona One", sans-serif;
     --fonte-secundaria: "Montserrat", sans-serif;
@@ -110,7 +110,7 @@ body {
     font-weight: 600; /* determina espessura da fonte */
     padding: 15px 0; /* alinha as dimensões da borda do texto */
     text-decoration: none; /* retira sublinhado do lin texto */
-    color:var(--cor-secundaria); /* cor do texto */
+    color: var(--cor-secundaria); /* cor do texto */
 }
 
 .apresentacao_links_link:hover { /* :hover  é uma animação visual que destaca um botão quando o cursor do mouse passa por cima dele */
