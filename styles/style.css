@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
 
- /* variáveis, para centralizar as cores, e otimizar o código, quando quiser mudar cores e fontes principais  */
+ /* variáveis, para centralizar as cores e texto, e otimizar o código, quando quiser mudar cores e fontes principais  */
 :root { 
     --cor-principal: #1B262C;
     --cor-secundaria: #d0e5f3;
@@ -45,7 +45,7 @@ body {
 .cabecalho_menu_link {
     color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
 }
@@ -59,7 +59,7 @@ body {
 
 /* MUDAR TAMANHOS DE CONTEÚDO */
 .apresentacao_conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column; /* responsável pela direção dos elementos */
     gap: 40px; /* ajustar as margens entre um texto/conteúdo e outro */
@@ -67,7 +67,8 @@ body {
 
 /* MUDAR TAMANHOS DE CONTEÚDO E DE FONTES */
 .apresentacao_conteudo_titulo {
-    font-size: 36px;
+/* REM é uma unidade que permite que o tamanho da fonte se ajuste de acordo com as preferências do usuário no navegador. O calculo do pixel é o tamanho do pixel desejado dividido por 16. no caso 36 dividido por 16 deu 2,25 */
+    font-size: 2.25rem; 
     font-family: var(--fonte-principal);
 }
 
@@ -76,7 +77,7 @@ body {
 }
 
 .apresentacao_conteudo_texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
     font-weight: 400;
 }
@@ -91,22 +92,22 @@ body {
 }
 
 .apresentacao_links_subtitulo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-principal);
     font-weight:400;
 }
 
-.apresentacao_links_link {
+.apresentacao_links_navegacao {
     /* background-color: #22d4fd; cor de fundo do texto */
     display: flex;
     justify-content: center;
     gap: 16px;
     border: 3px solid var(--cor-terciaria); /* cria uma borda em volta do texto linkado */
-    width: 378px; /* aumenta o tamanho das laterais */
+    width: 50%; /* aumenta o tamanho das laterais */
     text-align: center; /* centraliza o texto */
     border-radius: 8px; /* ajusta a borda, deixando ela arredondada */
     font-family: var(--fonte-secundaria); /* fonte do texto */
-    font-size: 24px; /* tamanho da fonte */
+    font-size: 1.5rem; /* tamanho da fonte */
     font-weight: 600; /* determina espessura da fonte */
     padding: 15px 0; /* alinha as dimensões da borda do texto */
     text-decoration: none; /* retira sublinhado do lin texto */
@@ -117,6 +118,11 @@ body {
     background-color: var(--cor-hover);
 }
 
+.apresentacao_imagem {
+    width: 40%;
+    height: 40%;
+}
+
 .rodape {
     background-color: var(--cor-terciaria);
     padding: 20px;
@@ -124,7 +130,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: var(--fonte-secundaria); /* fonte do texto */
-    font-size: 22px; /* tamanho da fonte */
+    font-size: 1.38rem; /* tamanho da fonte */
     font-weight: 400; /* determina espessura da fonte */
 }
 
