@@ -55,6 +55,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; /* space-between itens dentro do contêiner são distribuídos de forma que haja um espaço igual entre eles. */
+    gap: 82px;
 }
 
 /* MUDAR TAMANHOS DE CONTEÚDO */
@@ -132,6 +133,25 @@ body {
     font-family: var(--fonte-secundaria); /* fonte do texto */
     font-size: 1.38rem; /* tamanho da fonte */
     font-weight: 400; /* determina espessura da fonte */
+}
+
+@media (max-width: 1200px) { /* tudo até essa pixelagem vai mudar, otimizando para mobile */
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho_menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 4%;
+    }
+
+    .apresentacao_conteudo {
+        width: auto;
+    }
 }
 
 /* 
